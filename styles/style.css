@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkslategray;
+}
+
+.container {
+    background-color: cadetblue;
+    padding: 2rem;
+    border-radius: 16px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.btn1, .btn2 {
+    padding: 0.4rem;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 5rem;
+    background-color: burlywood;
+    color: white;
+}
+
+.btn3 {
+    float: right;
+    padding: 0.4rem;
+    background-color: cadetblue;
+    border: 0px;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.btn1:hover {
+    box-shadow: 0 10px 15px coral;
+    transition: 0.2s;
+    transform: scale(1.1);
+    background-color: coral;
+}
+
+.btn2:hover {
+    box-shadow: 0 10px 15px coral;
+    transition: 0.2s;
+    transform: scale(1.1);
+    background-color: coral;
+}
+
+.btn3:hover {
+    background-color: red;
+    box-shadow: 0 10px 15px red;
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+
+.inp1 {
+    width: 20rem;
+    padding: 0.5rem;
+}
+
+ul {
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: white;
+    list-style-type: none;
+}
+
+li {
+    margin-top: 1rem;
+    outline: 2px solid burlywood;
+}
+
+@media screen and (max-width:770px) {
+    .inp1 {
+        width: 15rem;
+    }
+}
+
+@media screen and (max-width:560px) {
+
+    .container {
+      width: fit-content;
+      flex-direction: column;
+    }
+
+    .btn1,.btn2 {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .inp1 {
+        width: 100%;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
