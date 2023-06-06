@@ -32,6 +32,7 @@ addName.addEventListener("click", (event)=> {
     })
 })
 
+
 function deleteTask(name) {
     console.log("Deleted");
     nameList.splice(name,1);  
