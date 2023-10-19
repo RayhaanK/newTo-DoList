@@ -16,6 +16,11 @@ body {
     height: fit-content;
 }
 
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+}
+
 .btn1, .btn2 {
     padding: 0.4rem;
     border-radius: 15px;
@@ -25,12 +30,26 @@ body {
     color: white;
 }
 
-.btn3 {
+.delete-btn {
     float: right;
-    padding: 0.2rem;
-    background-color: cadetblue;
+    padding: 0.4rem;
+    background-color: red;
+    width: 3rem;
+    margin-left: 0.3rem;
+    height: 55px;
     border: 0px;
     align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.edit-btn {
+    padding: 0.2rem;
+    background-color: green;
+    border: 0px;
+    align-items: center;
+    height: 55px;
     text-align: center;
     cursor: pointer;
     border-radius: 7px;
@@ -50,15 +69,26 @@ body {
     background-color: coral;
 }
 
-.btn3:hover {
+.delete-btn:hover {
     background-color: red;
     box-shadow: 0 10px 15px red;
+    transition: 0.2s;
+}
+
+.edit-btn:hover {
+    background-color: green;
+    box-shadow: 0 10px 15px green;
     transition: 0.2s;
 }
 
 .inp1 {
     width: 20rem;
     padding: 0.5rem;
+}
+
+p.checked {
+    text-decoration: line-through;
+    color: black;
 }
 
 ul {
@@ -105,6 +135,10 @@ li {
     .btn1,.btn2 {
         width: 100%;
         border-radius: 0;
+    }
+
+    .edit-btn, .delete-btn{
+        margin-top: 0.2rem;
     }
 
     .inp1 {
